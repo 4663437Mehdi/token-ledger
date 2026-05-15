@@ -4,7 +4,13 @@ import os
 import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = os.environ.get("OPENROUTER_MODEL", "google/gemini-2.0-flash-exp:free")
+
+FREE_MODELS = [
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "deepseek/deepseek-chat-v3-0324:free",
+    "google/gemini-2.5-pro-exp-03-25:free",
+    "mistralai/mistral-7b-instruct:free",
+]
 
 SYSTEM = """You are the editor of "The Token Ledger", a daily newsletter for AI developers
 tracking LLM API pricing and model availability changes across providers.
@@ -38,23 +44,31 @@ def synthesize(diff, snapshot, date_str):
     }
     user_prompt = f"Today is {date_str}. Write the digest from this JSON:\n\n{json.dumps(payload_data, indent=2)}"
 
-    r = requests.post(
-        OPENROUTER_URL,
-        headers={
-            "Authorization": f"Bearer {os.environ['OPENROUTER_KEY']}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/4663437Mehdi/token-ledger",
-            "X-Title": "The Token Ledger",
-        },
-        json={
-            "model": MODEL,
-            "messages": [
-                {"role": "system", "content": SYSTEM},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.3,
-        },
-        timeout=120,
-    )
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"].strip()
+    models = [os.environ["OPENROUTER_MODEL"]] if os.environ.get("OPENROUTER_MODEL") else FREE_MODELS
+    headers = {
+        "Authorization": f"Bearer {os.environ['OPENROUTER_KEY']}",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://github.com/4663437Mehdi/token-ledger",
+        "X-Title": "The Token Ledger",
+    }
+    last_err = None
+    for model in models:
+        print(f"[digest] trying model: {model}")
+        r = requests.post(
+            OPENROUTER_URL,
+            headers=headers,
+            json={
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": SYSTEM},
+                    {"role": "user", "content": user_prompt},
+                ],
+                "temperature": 0.3,
+            },
+            timeout=120,
+        )
+        if r.status_code < 300:
+            return r.json()["choices"][0]["message"]["content"].strip()
+        print(f"[digest] {model} failed {r.status_code}: {r.text[:200]}")
+        last_err = r
+    last_err.raise_for_status()
