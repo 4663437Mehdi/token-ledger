@@ -6,10 +6,10 @@ import requests
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 FREE_MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "deepseek/deepseek-chat-v3-0324:free",
-    "google/gemini-2.5-pro-exp-03-25:free",
-    "mistralai/mistral-7b-instruct:free",
+    "deepseek/deepseek-v4-flash:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "google/gemma-4-31b-it:free",
 ]
 
 SYSTEM = """You are the editor of "The Token Ledger", a daily newsletter for AI developers
