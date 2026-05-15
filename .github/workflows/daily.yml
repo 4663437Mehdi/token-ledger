@@ -1,0 +1,68 @@
+name: Daily Digest
+
+on:
+  schedule:
+    - cron: "15 7 * * *"   # 07:15 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run digest
+        env:
+          OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
+          RESEND_KEY: ${{ secrets.RESEND_KEY }}
+          DEVTO_KEY: ${{ secrets.DEVTO_KEY }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/token-ledger
+        run: python scripts/run.py
+
+      - name: Commit data + archive
+        run: |
+          git config user.name "token-ledger-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ archive/ site/archive_index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "digest: $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "nothing to commit"
+          fi
+
+      - name: Stage site for Pages
+        run: |
+          mkdir -p _site
+          cp -r site/* _site/
+          cp -r archive _site/archive
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: digest
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
