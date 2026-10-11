@@ -347,8 +347,8 @@
     "id": "~deepseek/deepseek-flash-latest",
     "name": "DeepSeek: DeepSeek Flash Latest",
     "context": 1048576,
-    "prompt_price": 1e-10,
-    "completion_price": 6e-07,
+    "prompt_price": 3.48e-08,
+    "completion_price": 1.392e-07,
     "created": 1789399150
   },
   "inference-net/schematron-v2-turbo": {
@@ -651,7 +651,7 @@
     "id": "~z-ai/glm-latest",
     "name": "Z.ai: GLM Latest",
     "context": 1048576,
-    "prompt_price": 3.9e-08,
+    "prompt_price": 7e-08,
     "completion_price": 4.8e-06,
     "created": 1787151053
   },
@@ -667,7 +667,7 @@
     "id": "z-ai/glm-5.3",
     "name": "Z.ai: GLM 5.3",
     "context": 1048576,
-    "prompt_price": 3.9e-08,
+    "prompt_price": 7e-08,
     "completion_price": 4.8e-06,
     "created": 1787086655
   },
@@ -683,8 +683,8 @@
     "id": "qwen/qwen3.8-27b",
     "name": "Qwen: Qwen3.8 27B",
     "context": 1000000,
-    "prompt_price": 4.25e-07,
-    "completion_price": 2.55e-06,
+    "prompt_price": 4e-08,
+    "completion_price": 2.3e-06,
     "created": 1786722910
   },
   "dots-studio/dots-3-note-preview:free": {
@@ -811,16 +811,16 @@
     "id": "~deepseek/deepseek-v4-flash-latest",
     "name": "DeepSeek: DeepSeek V4 Flash Latest",
     "context": 1048576,
-    "prompt_price": 1.37e-08,
-    "completion_price": 1.28e-06,
+    "prompt_price": 1.8e-08,
+    "completion_price": 6.4e-07,
     "created": 1785606009
   },
   "deepseek/deepseek-v4-flash-0731": {
     "id": "deepseek/deepseek-v4-flash-0731",
     "name": "DeepSeek: DeepSeek V4 Flash 0731",
     "context": 1048576,
-    "prompt_price": 1.37e-08,
-    "completion_price": 1.28e-06,
+    "prompt_price": 1.8e-08,
+    "completion_price": 6.4e-07,
     "created": 1785478908
   },
   "thinkingmachines/inkling-small": {
@@ -955,8 +955,8 @@
     "id": "moonshotai/kimi-k3",
     "name": "MoonshotAI: Kimi K3",
     "context": 1048576,
-    "prompt_price": 5e-07,
-    "completion_price": 1.35e-05,
+    "prompt_price": 8e-07,
+    "completion_price": 1e-05,
     "created": 1784215858
   },
   "moonshotai/kimi-k3:batch": {
@@ -1251,8 +1251,8 @@
     "id": "nvidia/nemotron-3-ultra-550b-a55b",
     "name": "NVIDIA: Nemotron 3 Ultra",
     "context": 262144,
-    "prompt_price": 5e-07,
-    "completion_price": 2.2e-06,
+    "prompt_price": 6e-07,
+    "completion_price": 2.4e-06,
     "created": 1780551208
   },
   "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -1435,8 +1435,8 @@
     "id": "~moonshotai/kimi-latest",
     "name": "MoonshotAI: Kimi Latest",
     "context": 1048576,
-    "prompt_price": 3.1e-07,
-    "completion_price": 1.489e-05,
+    "prompt_price": 7.5e-07,
+    "completion_price": 1.49e-05,
     "created": 1777318428
   },
   "~google/gemini-flash-latest": {
@@ -1475,8 +1475,8 @@
     "id": "qwen/qwen3.6-35b-a3b",
     "name": "Qwen: Qwen3.6 35B A3B",
     "context": 262144,
-    "prompt_price": 1.5e-07,
-    "completion_price": 1e-06,
+    "prompt_price": 1e-07,
+    "completion_price": 9.5e-07,
     "created": 1777260255
   },
   "qwen/qwen3.6-27b": {
@@ -1523,15 +1523,15 @@
     "id": "deepseek/deepseek-v4-pro",
     "name": "DeepSeek: DeepSeek V4 Pro 0423",
     "context": 1048576,
-    "prompt_price": 2.68482e-07,
-    "completion_price": 5.36964e-07,
+    "prompt_price": 2.088e-07,
+    "completion_price": 4.176e-07,
     "created": 1777000679
   },
   "deepseek/deepseek-v4-flash": {
     "id": "deepseek/deepseek-v4-flash",
     "name": "DeepSeek: DeepSeek V4 Flash 0423",
     "context": 1048576,
-    "prompt_price": 2.56e-08,
+    "prompt_price": 3e-08,
     "completion_price": 1.28e-06,
     "created": 1777000666
   },
@@ -1587,8 +1587,8 @@
     "id": "moonshotai/kimi-k2.6",
     "name": "MoonshotAI: Kimi K2.6",
     "context": 262144,
-    "prompt_price": 4.41e-07,
-    "completion_price": 2.45e-06,
+    "prompt_price": 6.5e-07,
+    "completion_price": 3.41e-06,
     "created": 1776699402
   },
   "anthropic/claude-opus-4.7": {
