@@ -1,4 +1,44 @@
 {
+  "~unbiased/pareto-latest": {
+    "id": "~unbiased/pareto-latest",
+    "name": "Pareto Latest",
+    "context": 262144,
+    "prompt_price": 2.5e-06,
+    "completion_price": 7.5e-06,
+    "created": 1791933050
+  },
+  "unbiased/pareto-26.9": {
+    "id": "unbiased/pareto-26.9",
+    "name": "Pareto 26.9",
+    "context": 262144,
+    "prompt_price": 2.5e-06,
+    "completion_price": 7.5e-06,
+    "created": 1791930537
+  },
+  "liquid/lfm-2.5-24b-a2b": {
+    "id": "liquid/lfm-2.5-24b-a2b",
+    "name": "LiquidAI: LFM2.5-24B-A2B",
+    "context": 128000,
+    "prompt_price": 5e-08,
+    "completion_price": 7e-07,
+    "created": 1791912025
+  },
+  "google/gemini-4-argon": {
+    "id": "google/gemini-4-argon",
+    "name": "Google: Gemini 4 Argon",
+    "context": 1048576,
+    "prompt_price": 2e-06,
+    "completion_price": 1e-05,
+    "created": 1791907477
+  },
+  "google/gemini-4-argon:batch": {
+    "id": "google/gemini-4-argon:batch",
+    "name": "Google: Gemini 4 Argon (batch)",
+    "context": 1048576,
+    "prompt_price": 1e-06,
+    "completion_price": 5e-06,
+    "created": 1791907477
+  },
   "scaledown/summarize": {
     "id": "scaledown/summarize",
     "name": "ScaleDown: Summarize",
@@ -67,17 +107,9 @@
     "id": "inclusionai/ling-3.1-flash",
     "name": "inclusionAI: Ling 3.1 Flash",
     "context": 262144,
-    "prompt_price": 0.0,
-    "completion_price": 0.0,
+    "prompt_price": 7.5e-08,
+    "completion_price": 2.25e-07,
     "created": 1790950024
-  },
-  "apodex/apodex-1.1-mini:free": {
-    "id": "apodex/apodex-1.1-mini:free",
-    "name": "Apodex: Apodex 1.1 Mini (free)",
-    "context": 262144,
-    "prompt_price": 0.0,
-    "completion_price": 0.0,
-    "created": 1790875335
   },
   "unbiased/pareto-26.10-preview": {
     "id": "unbiased/pareto-26.10-preview",
@@ -351,28 +383,20 @@
     "completion_price": 1.25e-06,
     "created": 1789744020
   },
-  "unbiased/pareto": {
-    "id": "unbiased/pareto",
-    "name": "Pareto",
-    "context": 262144,
-    "prompt_price": 2.5e-06,
-    "completion_price": 7.5e-06,
-    "created": 1789686178
-  },
   "~deepseek/deepseek-pro-latest": {
     "id": "~deepseek/deepseek-pro-latest",
     "name": "DeepSeek: DeepSeek Pro Latest",
     "context": 1048576,
-    "prompt_price": 2.4948e-07,
-    "completion_price": 7.4844e-07,
+    "prompt_price": 2.02e-07,
+    "completion_price": 8e-06,
     "created": 1789399174
   },
   "~deepseek/deepseek-flash-latest": {
     "id": "~deepseek/deepseek-flash-latest",
     "name": "DeepSeek: DeepSeek Flash Latest",
     "context": 1048576,
-    "prompt_price": 4.41e-08,
-    "completion_price": 6.21e-07,
+    "prompt_price": 2.016e-08,
+    "completion_price": 8.91e-07,
     "created": 1789399150
   },
   "inference-net/schematron-v2-turbo": {
@@ -442,17 +466,17 @@
   "inclusionai/ling-3.0-flash-vl": {
     "id": "inclusionai/ling-3.0-flash-vl",
     "name": "inclusionAI: Ling 3.0 Flash VL",
-    "context": 262144,
-    "prompt_price": 2.1e-08,
-    "completion_price": 6.16e-08,
+    "context": 131072,
+    "prompt_price": 6e-08,
+    "completion_price": 1.8e-07,
     "created": 1789056114
   },
   "deepseek/deepseek-v4.1-flash": {
     "id": "deepseek/deepseek-v4.1-flash",
     "name": "DeepSeek: DeepSeek V4.1 Flash",
     "context": 1048576,
-    "prompt_price": 4.41e-08,
-    "completion_price": 6.21e-07,
+    "prompt_price": 2.016e-08,
+    "completion_price": 8.91e-07,
     "created": 1789021285
   },
   "deepseek/deepseek-v4.1-flash:batch": {
@@ -518,14 +542,6 @@
     "prompt_price": 5e-06,
     "completion_price": 2.5e-05,
     "created": 1788552835
-  },
-  "inclusionai/ling-3.0-flash-sante": {
-    "id": "inclusionai/ling-3.0-flash-sante",
-    "name": "inclusionAI: Ling 3.0 Flash Sante",
-    "context": 262144,
-    "prompt_price": 4.2e-08,
-    "completion_price": 1.232e-07,
-    "created": 1788545946
   },
   "qwen/qwen3.8-max-0902": {
     "id": "qwen/qwen3.8-max-0902",
@@ -599,19 +615,11 @@
     "completion_price": 2.501e-06,
     "created": 1787897375
   },
-  "inclusionai/ling-3.0-flash-fin": {
-    "id": "inclusionai/ling-3.0-flash-fin",
-    "name": "inclusionAI: Ling 3.0 Flash Fin",
-    "context": 262144,
-    "prompt_price": 4.2e-08,
-    "completion_price": 1.232e-07,
-    "created": 1787846290
-  },
   "~z-ai/glm-flash-latest": {
     "id": "~z-ai/glm-flash-latest",
     "name": "Z.ai: GLM Flash Latest",
     "context": 1048576,
-    "prompt_price": 2.61e-08,
+    "prompt_price": 3.6e-08,
     "completion_price": 9e-07,
     "created": 1787817633
   },
@@ -627,7 +635,7 @@
     "id": "z-ai/glm-5.3-flash",
     "name": "Z.ai: GLM 5.3 Flash",
     "context": 1048576,
-    "prompt_price": 2.61e-08,
+    "prompt_price": 3.6e-08,
     "completion_price": 9e-07,
     "created": 1787752741
   },
@@ -675,8 +683,8 @@
     "id": "~z-ai/glm-latest",
     "name": "Z.ai: GLM Latest",
     "context": 1048576,
-    "prompt_price": 5.5e-08,
-    "completion_price": 5e-06,
+    "prompt_price": 5.76e-08,
+    "completion_price": 4.4e-06,
     "created": 1787151053
   },
   "tencent/hy-mt2-7b": {
@@ -979,8 +987,8 @@
     "id": "moonshotai/kimi-k3",
     "name": "MoonshotAI: Kimi K3",
     "context": 1048576,
-    "prompt_price": 7.3e-07,
-    "completion_price": 1e-05,
+    "prompt_price": 7e-07,
+    "completion_price": 1.5e-05,
     "created": 1784215858
   },
   "moonshotai/kimi-k3:batch": {
@@ -1211,7 +1219,7 @@
     "id": "z-ai/glm-5.2",
     "name": "Z.ai: GLM 5.2",
     "context": 1048576,
-    "prompt_price": 6e-08,
+    "prompt_price": 5e-08,
     "completion_price": 7e-06,
     "created": 1781631930
   },
@@ -1459,8 +1467,8 @@
     "id": "~moonshotai/kimi-latest",
     "name": "MoonshotAI: Kimi Latest",
     "context": 1048576,
-    "prompt_price": 7.3e-07,
-    "completion_price": 1e-05,
+    "prompt_price": 5.36e-07,
+    "completion_price": 1.4e-05,
     "created": 1777318428
   },
   "~google/gemini-flash-latest": {
@@ -1547,16 +1555,16 @@
     "id": "deepseek/deepseek-v4-pro",
     "name": "DeepSeek: DeepSeek V4 Pro 0423",
     "context": 1048576,
-    "prompt_price": 4.36044e-07,
-    "completion_price": 8.72088e-07,
+    "prompt_price": 4.47876e-07,
+    "completion_price": 8.95752e-07,
     "created": 1777000679
   },
   "deepseek/deepseek-v4-flash": {
     "id": "deepseek/deepseek-v4-flash",
     "name": "DeepSeek: DeepSeek V4 Flash 0423",
     "context": 1048576,
-    "prompt_price": 5e-08,
-    "completion_price": 1.28e-06,
+    "prompt_price": 9.1e-08,
+    "completion_price": 1.82e-07,
     "created": 1777000666
   },
   "tencent/hy3-preview": {
@@ -1635,8 +1643,8 @@
     "id": "z-ai/glm-5.1",
     "name": "Z.ai: GLM 5.1",
     "context": 204800,
-    "prompt_price": 9.66e-07,
-    "completion_price": 3.036e-06,
+    "prompt_price": 1.33e-06,
+    "completion_price": 4.18e-06,
     "created": 1775578025
   },
   "google/gemma-4-26b-a4b-it": {
@@ -1899,8 +1907,8 @@
     "id": "qwen/qwen3.5-35b-a3b",
     "name": "Qwen: Qwen3.5-35B-A3B",
     "context": 262144,
-    "prompt_price": 8e-08,
-    "completion_price": 7.5e-07,
+    "prompt_price": 1.5e-07,
+    "completion_price": 1e-06,
     "created": 1772053822
   },
   "qwen/qwen3.5-27b": {
@@ -1995,8 +2003,8 @@
     "id": "qwen/qwen3.5-397b-a17b",
     "name": "Qwen: Qwen3.5 397B A17B",
     "context": 262144,
-    "prompt_price": 5.5e-07,
-    "completion_price": 3.5e-06,
+    "prompt_price": 5e-07,
+    "completion_price": 3.6e-06,
     "created": 1771223018
   },
   "minimax/minimax-m2.5": {
@@ -2419,8 +2427,8 @@
     "id": "minimax/minimax-m2",
     "name": "MiniMax: MiniMax M2",
     "context": 204800,
-    "prompt_price": 3e-07,
-    "completion_price": 1.2e-06,
+    "prompt_price": 2.55e-07,
+    "completion_price": 1.02e-06,
     "created": 1761252093
   },
   "ibm-granite/granite-4.0-h-micro": {
@@ -2699,8 +2707,8 @@
     "id": "openai/gpt-oss-120b",
     "name": "OpenAI: gpt-oss-120b",
     "context": 131072,
-    "prompt_price": 1.5e-07,
-    "completion_price": 6e-07,
+    "prompt_price": 3.7e-08,
+    "completion_price": 1.7e-07,
     "created": 1754414231
   },
   "openai/gpt-oss-120b:batch": {
