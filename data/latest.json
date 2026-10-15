@@ -66,7 +66,7 @@
   "stepfun/step-5-preview": {
     "id": "stepfun/step-5-preview",
     "name": "StepFun: Step 5 Preview",
-    "context": 1000000,
+    "context": 1048576,
     "prompt_price": 1e-06,
     "completion_price": 2.7e-06,
     "created": 1791462849
@@ -387,7 +387,7 @@
     "id": "~deepseek/deepseek-pro-latest",
     "name": "DeepSeek: DeepSeek Pro Latest",
     "context": 1048576,
-    "prompt_price": 2.02e-07,
+    "prompt_price": 2.25e-07,
     "completion_price": 8e-06,
     "created": 1789399174
   },
@@ -395,8 +395,8 @@
     "id": "~deepseek/deepseek-flash-latest",
     "name": "DeepSeek: DeepSeek Flash Latest",
     "context": 1048576,
-    "prompt_price": 2.016e-08,
-    "completion_price": 8.91e-07,
+    "prompt_price": 2.376e-08,
+    "completion_price": 7.2e-07,
     "created": 1789399150
   },
   "inference-net/schematron-v2-turbo": {
@@ -475,8 +475,8 @@
     "id": "deepseek/deepseek-v4.1-flash",
     "name": "DeepSeek: DeepSeek V4.1 Flash",
     "context": 1048576,
-    "prompt_price": 2.016e-08,
-    "completion_price": 8.91e-07,
+    "prompt_price": 2.376e-08,
+    "completion_price": 7.2e-07,
     "created": 1789021285
   },
   "deepseek/deepseek-v4.1-flash:batch": {
@@ -635,8 +635,8 @@
     "id": "z-ai/glm-5.3-flash",
     "name": "Z.ai: GLM 5.3 Flash",
     "context": 1048576,
-    "prompt_price": 3.6e-08,
-    "completion_price": 9e-07,
+    "prompt_price": 1.5e-07,
+    "completion_price": 5e-07,
     "created": 1787752741
   },
   "z-ai/glm-5.3-flash:batch": {
@@ -683,7 +683,7 @@
     "id": "~z-ai/glm-latest",
     "name": "Z.ai: GLM Latest",
     "context": 1048576,
-    "prompt_price": 5.76e-08,
+    "prompt_price": 6.3e-08,
     "completion_price": 4.4e-06,
     "created": 1787151053
   },
@@ -715,8 +715,8 @@
     "id": "qwen/qwen3.8-27b",
     "name": "Qwen: Qwen3.8 27B",
     "context": 1000000,
-    "prompt_price": 4e-08,
-    "completion_price": 2.3e-06,
+    "prompt_price": 2.4e-07,
+    "completion_price": 2.2e-06,
     "created": 1786722910
   },
   "dots-studio/dots-3-note-preview:free": {
@@ -987,7 +987,7 @@
     "id": "moonshotai/kimi-k3",
     "name": "MoonshotAI: Kimi K3",
     "context": 1048576,
-    "prompt_price": 7e-07,
+    "prompt_price": 4.5e-07,
     "completion_price": 1.5e-05,
     "created": 1784215858
   },
@@ -1075,32 +1075,32 @@
     "id": "openai/gpt-5.6-sol-pro",
     "name": "OpenAI: GPT-5.6 Sol Pro",
     "context": 1050000,
-    "prompt_price": 2e-06,
-    "completion_price": 1e-05,
+    "prompt_price": 4e-06,
+    "completion_price": 2e-05,
     "created": 1783590854
   },
   "openai/gpt-5.6-sol-pro:batch": {
     "id": "openai/gpt-5.6-sol-pro:batch",
     "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
     "context": 1050000,
-    "prompt_price": 1e-06,
-    "completion_price": 5e-06,
+    "prompt_price": 2e-06,
+    "completion_price": 1e-05,
     "created": 1783590854
   },
   "openai/gpt-5.6-sol": {
     "id": "openai/gpt-5.6-sol",
     "name": "OpenAI: GPT-5.6 Sol",
     "context": 1050000,
-    "prompt_price": 2e-06,
-    "completion_price": 1e-05,
+    "prompt_price": 4e-06,
+    "completion_price": 2e-05,
     "created": 1783590850
   },
   "openai/gpt-5.6-sol:batch": {
     "id": "openai/gpt-5.6-sol:batch",
     "name": "OpenAI: GPT-5.6 Sol (batch)",
     "context": 1050000,
-    "prompt_price": 1e-06,
-    "completion_price": 5e-06,
+    "prompt_price": 2e-06,
+    "completion_price": 1e-05,
     "created": 1783590850
   },
   "x-ai/grok-4.5": {
@@ -1219,7 +1219,7 @@
     "id": "z-ai/glm-5.2",
     "name": "Z.ai: GLM 5.2",
     "context": 1048576,
-    "prompt_price": 5e-08,
+    "prompt_price": 2e-08,
     "completion_price": 7e-06,
     "created": 1781631930
   },
@@ -1460,15 +1460,15 @@
     "name": "Google: Gemini Pro Latest",
     "context": 1048576,
     "prompt_price": 2e-06,
-    "completion_price": 1.2e-05,
+    "completion_price": 1e-05,
     "created": 1777318451
   },
   "~moonshotai/kimi-latest": {
     "id": "~moonshotai/kimi-latest",
     "name": "MoonshotAI: Kimi Latest",
     "context": 1048576,
-    "prompt_price": 5.36e-07,
-    "completion_price": 1.4e-05,
+    "prompt_price": 2.9e-07,
+    "completion_price": 2.4e-05,
     "created": 1777318428
   },
   "~google/gemini-flash-latest": {
@@ -1507,8 +1507,8 @@
     "id": "qwen/qwen3.6-35b-a3b",
     "name": "Qwen: Qwen3.6 35B A3B",
     "context": 262144,
-    "prompt_price": 1e-07,
-    "completion_price": 9.5e-07,
+    "prompt_price": 1.5e-07,
+    "completion_price": 1e-06,
     "created": 1777260255
   },
   "qwen/qwen3.6-27b": {
@@ -1555,8 +1555,8 @@
     "id": "deepseek/deepseek-v4-pro",
     "name": "DeepSeek: DeepSeek V4 Pro 0423",
     "context": 1048576,
-    "prompt_price": 4.47876e-07,
-    "completion_price": 8.95752e-07,
+    "prompt_price": 9.5526e-07,
+    "completion_price": 1.91052e-06,
     "created": 1777000679
   },
   "deepseek/deepseek-v4-flash": {
@@ -1643,8 +1643,8 @@
     "id": "z-ai/glm-5.1",
     "name": "Z.ai: GLM 5.1",
     "context": 204800,
-    "prompt_price": 1.33e-06,
-    "completion_price": 4.18e-06,
+    "prompt_price": 9.66e-07,
+    "completion_price": 3.036e-06,
     "created": 1775578025
   },
   "google/gemma-4-26b-a4b-it": {
@@ -1667,8 +1667,8 @@
     "id": "google/gemma-4-31b-it",
     "name": "Google: Gemma 4 31B",
     "context": 262144,
-    "prompt_price": 9e-08,
-    "completion_price": 3.4e-07,
+    "prompt_price": 2e-07,
+    "completion_price": 4e-07,
     "created": 1775148486
   },
   "google/gemma-4-31b-it:free": {
@@ -2012,15 +2012,15 @@
     "name": "MiniMax: MiniMax M2.5",
     "context": 204800,
     "prompt_price": 2.7e-07,
-    "completion_price": 1.08e-06,
+    "completion_price": 9.5e-07,
     "created": 1770908502
   },
   "z-ai/glm-5": {
     "id": "z-ai/glm-5",
     "name": "Z.ai: GLM 5",
     "context": 204800,
-    "prompt_price": 6e-07,
-    "completion_price": 1.92e-06,
+    "prompt_price": 1e-06,
+    "completion_price": 3.2e-06,
     "created": 1770829182
   },
   "anthropic/claude-opus-4.6": {
@@ -2707,8 +2707,8 @@
     "id": "openai/gpt-oss-120b",
     "name": "OpenAI: gpt-oss-120b",
     "context": 131072,
-    "prompt_price": 3.7e-08,
-    "completion_price": 1.7e-07,
+    "prompt_price": 1.5e-07,
+    "completion_price": 6e-07,
     "created": 1754414231
   },
   "openai/gpt-oss-120b:batch": {
@@ -2891,8 +2891,8 @@
     "id": "mistralai/mistral-small-3.2-24b-instruct",
     "name": "Mistral: Mistral Small 3.2 24B",
     "context": 256000,
-    "prompt_price": 9.375e-08,
-    "completion_price": 2.5e-07,
+    "prompt_price": 7.5e-08,
+    "completion_price": 2e-07,
     "created": 1750443016
   },
   "minimax/minimax-m1": {
